@@ -30,4 +30,4 @@ jobs:
           docker push $DOCKER_USERNAME/udagram-api-user:v1
           docker push $DOCKER_USERNAME/udagram-api-feed:v1
           docker push $DOCKER_USERNAME/udagram-frontend:v1
-          docker push $DOCKER_USERNAME/reverseproxy:v1
+          docker push $DOCKER_USERNAME/udagram-reverseproxy:v1

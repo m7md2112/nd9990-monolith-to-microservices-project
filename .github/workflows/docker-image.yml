@@ -18,7 +18,7 @@ jobs:
         DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
         DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
       run: |
-        docker build -t udagram-api-users ./udagram-api-users
+        docker build -t udagram-api-users ./udagram-api-user
         docker tag udagram-api-users $DOCKER_USERNAME/udagram-api-users:v1
         docker build -t udagram-api-feed ./udagram-api-feed
         docker tag udagram-api-feed $DOCKER_USERNAME/udagram-api-feed:v1

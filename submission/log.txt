@@ -1,0 +1,741 @@
+travis_fold:start:worker_info[0K[33;1mWorker information[0m
+hostname: 51ff180f-af89-4d2d-8896-e62461d99d0c@1.worker-com-56bcc5cbcf-bqkc6.gce-production-2
+version: v6.2.24 https://github.com/travis-ci/worker/tree/ee57d650a7692c1ac03f74ac073d0fd150c9f030
+instance: travis-job-0c44fe3f-0dd7-41b9-9d1b-5c927841669d travis-ci-sardonyx-xenial-1684402799-0876f6f0 (via amqp)
+startup: 6.457998981s
+travis_fold:end:worker_info[0Ktravis_time:start:03f8a1ec[0Ktravis_time:end:03f8a1ec:start=1708776971020423604,finish=1708776971169074552,duration=148650948,event=no_world_writable_dirs[0Ktravis_time:start:07636044[0Ktravis_time:end:07636044:start=1708776971171743739,finish=1708776971174594716,duration=2850977,event=setup_filter[0Ktravis_time:start:0d867abe[0Ktravis_time:end:0d867abe:start=1708776971178565968,finish=1708776971186158666,duration=7592698,event=agent[0Ktravis_time:start:1058e41c[0Ktravis_time:end:1058e41c:start=1708776971188653859,finish=1708776971190562100,duration=1908241,event=check_unsupported[0Ktravis_time:start:24680553[0Ktravis_fold:start:system_info[0K[33;1mBuild system information[0m
+Build language: generic
+Build dist: xenial
+Build id: 269099851
+Job id: 618274053
+Runtime kernel version: 4.15.0-1098-gcp
+travis-build version: f3de9fb7
+[34m[1mBuild image provisioning date and time[0m
+Thu May 18 10:07:51 UTC 2023
+[34m[1mOperating System Details[0m
+Distributor ID:	Ubuntu
+Description:	Ubuntu 16.04.7 LTS
+Release:	16.04
+Codename:	xenial
+[34m[1mSystemd Version[0m
+systemd 229
+[34m[1mCookbooks Version[0m
+d19e5ff https://github.com/travis-ci/travis-cookbooks/tree/d19e5ff
+[34m[1mgit version[0m
+git version 2.40.1
+[34m[1mbash version[0m
+GNU bash, version 4.3.48(1)-release (x86_64-pc-linux-gnu)
+[34m[1mgcc version[0m
+gcc (Ubuntu 5.4.0-6ubuntu1~16.04.12) 5.4.0 20160609
+[34m[1mdocker version[0m
+Client: Docker Engine - Community
+ Version:           20.10.7
+ API version:       1.41
+ Go version:        go1.13.15
+ Git commit:        f0df350
+ Built:             Wed Jun  2 11:56:47 2021
+ OS/Arch:           linux/amd64
+ Context:           default
+ Experimental:      true
+
+Server: Docker Engine - Community
+ Engine:
+  Version:          20.10.7
+  API version:      1.41 (minimum version 1.12)
+  Go version:       go1.13.15
+  Git commit:       b0f5bc3
+  Built:            Wed Jun  2 11:54:58 2021
+  OS/Arch:          linux/amd64
+  Experimental:     false
+ containerd:
+  Version:          1.4.6
+  GitCommit:        d71fcd7d8303cbf684402823e425e9dd2e99285d
+ runc:
+  Version:          1.0.0-rc95
+  GitCommit:        b9ee9c6314599f1b4a7f497e1f1f856fe433d3b7
+ docker-init:
+  Version:          0.19.0
+  GitCommit:        de40ad0
+[34m[1mclang version[0m
+clang version 7.0.0 (tags/RELEASE_700/final)
+[34m[1mjq version[0m
+jq-1.6
+[34m[1mbats version[0m
+Bats 0.4.0
+[34m[1mshellcheck version[0m
+0.7.2
+[34m[1mshfmt version[0m
+v3.2.1
+[34m[1mccache version[0m
+3.2.4
+[34m[1mcmake version[0m
+cmake version 3.26.3
+[34m[1mheroku version[0m
+heroku/8.1.3 linux-x64 node-v16.19.0
+[34m[1mimagemagick version[0m
+Version: ImageMagick 6.8.9-9 Q16 x86_64 2020-12-04 http://www.imagemagick.org
+[34m[1mmd5deep version[0m
+4.4
+[34m[1mmercurial version[0m
+version 5.9.3
+[34m[1mmysql version[0m
+mysql  Ver 14.14 Distrib 5.7.33, for Linux (x86_64) using  EditLine wrapper
+[34m[1mopenssl version[0m
+OpenSSL 1.0.2g  1 Mar 2016
+[34m[1mpacker version[0m
+1.7.5
+[34m[1mpostgresql client version[0m
+psql (PostgreSQL) 10.17 (Ubuntu 10.17-1.pgdg16.04+1)
+[34m[1mragel version[0m
+Ragel State Machine Compiler version 6.8 Feb 2013
+[34m[1msudo version[0m
+1.8.16
+[34m[1mgzip version[0m
+gzip 1.6
+[34m[1mzip version[0m
+Zip 3.0
+[34m[1mvim version[0m
+VIM - Vi IMproved 7.4 (2013 Aug 10, compiled Oct 13 2020 16:04:38)
+[34m[1miptables version[0m
+iptables v1.6.0
+[34m[1mcurl version[0m
+curl 7.47.0 (x86_64-pc-linux-gnu) libcurl/7.47.0 GnuTLS/3.4.10 zlib/1.2.8 libidn/1.32 librtmp/2.3
+[34m[1mwget version[0m
+GNU Wget 1.17.1 built on linux-gnu.
+[34m[1mrsync version[0m
+rsync  version 3.1.1  protocol version 31
+[34m[1mgimme version[0m
+v1.5.4
+[34m[1mnvm version[0m
+0.39.3
+[34m[1mperlbrew version[0m
+/home/travis/perl5/perlbrew/bin/perlbrew  - App::perlbrew/0.95
+[34m[1mphpenv version[0m
+rbenv 1.2.0
+[34m[1mrvm version[0m
+rvm 1.29.12 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+[34m[1mdefault ruby version[0m
+ruby 2.7.6p219 (2022-04-12 revision c9c2245c0a) [x86_64-linux]
+[34m[1mdefault python version[0m
+Python 3.7.13
+[34m[1mCouchDB version[0m
+couchdb 1.6.1
+[34m[1mElasticSearch version[0m
+7.16.3
+[34m[1mInstalled Firefox version[0m
+firefox 63.0.1
+[34m[1mMongoDB version[0m
+MongoDB 4.4.21
+[34m[1mPhantomJS version[0m
+2.1.1
+[34m[1mPre-installed PostgreSQL versions[0m
+9.4.26
+9.5.25
+9.6.22
+[34m[1mRedis version[0m
+redis-server 6.0.6
+[34m[1mPre-installed Go versions[0m
+1.18.4
+[34m[1mant version[0m
+Apache Ant(TM) version 1.9.6 compiled on July 20 2018
+[34m[1mmvn version[0m
+Apache Maven 3.8.8 (4c87b05d9aedce574290d1acc98575ed5eb6cd39)
+[34m[1mgradle version[0m
+Gradle 7.5.1!
+[34m[1mlein version[0m
+Leiningen 2.10.0 on Java 11.0.15.1 OpenJDK 64-Bit Server VM
+[34m[1mPre-installed Node.js versions[0m
+v10.24.1
+v12.22.12
+v14.21.3
+v16.15
+v16.16.0
+v16.20.0
+v18.16.0
+v4.9.1
+v6.17.1
+v8.17.0
+[34m[1mphpenv versions[0m
+  system
+  7.4
+* 7.4.30 (set by /home/travis/.phpenv/version)
+  hhvm-stable
+  hhvm
+[34m[1mcomposer --version[0m
+Composer version 2.3.7 2022-06-06 16:43:28
+[34m[1mPre-installed Ruby versions[0m
+ruby-2.7.6
+ruby-3.0.4
+ruby-3.1.2
+travis_fold:end:system_info[0K
+travis_time:end:24680553:start=1708776971193096022,finish=1708776971203349732,duration=10253710,event=show_system_info[0Ktravis_time:start:0dd4ea58[0Ktravis_time:end:0dd4ea58:start=1708776971206013590,finish=1708776971232434814,duration=26421224,event=rm_riak_source[0Ktravis_time:start:011315a8[0Ktravis_time:end:011315a8:start=1708776971235684040,finish=1708776971241421857,duration=5737817,event=fix_rwky_redis[0Ktravis_time:start:0ce98ff5[0Ktravis_time:end:0ce98ff5:start=1708776971244548483,finish=1708776971712095025,duration=467546542,event=wait_for_network[0Ktravis_time:start:21b3b1ee[0Ktravis_time:end:21b3b1ee:start=1708776971716240117,finish=1708776983844053803,duration=12127813686,event=update_apt_keys[0Ktravis_time:start:15c42190[0Ktravis_time:end:15c42190:start=1708776983847591903,finish=1708776983898087859,duration=50495956,event=fix_hhvm_source[0Ktravis_time:start:0b5997dc[0Ktravis_time:end:0b5997dc:start=1708776983901509667,finish=1708776983904093774,duration=2584107,event=update_mongo_arch[0Ktravis_time:start:019601b8[0Ktravis_time:end:019601b8:start=1708776983907619161,finish=1708776983946943976,duration=39324815,event=fix_sudo_enabled_trusty[0Ktravis_time:start:0814fbbd[0Ktravis_time:end:0814fbbd:start=1708776983950915443,finish=1708776983953105144,duration=2189701,event=update_glibc[0Ktravis_time:start:001b8faa[0Ktravis_time:end:001b8faa:start=1708776983957368189,finish=1708776983986535503,duration=29167314,event=clean_up_path[0Ktravis_time:start:002473ae[0Ktravis_time:end:002473ae:start=1708776983989936932,finish=1708776983997547850,duration=7610918,event=fix_resolv_conf[0Ktravis_time:start:195bb520[0Ktravis_time:end:195bb520:start=1708776984000879691,finish=1708776984009402603,duration=8522912,event=fix_etc_hosts[0Ktravis_time:start:03c576d8[0Ktravis_time:end:03c576d8:start=1708776984013138217,finish=1708776984021032560,duration=7894343,event=fix_mvn_settings_xml[0Ktravis_time:start:11cbb60b[0Ktravis_time:end:11cbb60b:start=1708776984026455102,finish=1708776984035551828,duration=9096726,event=no_ipv6_localhost[0Ktravis_time:start:13db7449[0Ktravis_time:end:13db7449:start=1708776984039084178,finish=1708776984041273459,duration=2189281,event=fix_etc_mavenrc[0Ktravis_time:start:0a2fa362[0KOK
+travis_time:end:0a2fa362:start=1708776984045041604,finish=1708776984504703842,duration=459662238,event=fix_perforce_key[0Ktravis_time:start:12194f40[0Ktravis_time:end:12194f40:start=1708776984508823334,finish=1708776984511785704,duration=2962370,event=fix_wwdr_certificate[0Ktravis_time:start:0807c24c[0Ktravis_time:end:0807c24c:start=1708776984516104377,finish=1708776984539126700,duration=23022323,event=put_localhost_first[0Ktravis_time:start:1df62deb[0Ktravis_time:end:1df62deb:start=1708776984543117721,finish=1708776984546355851,duration=3238130,event=home_paths[0Ktravis_time:start:11827bd3[0Ktravis_time:end:11827bd3:start=1708776984551602766,finish=1708776984563363737,duration=11760971,event=disable_initramfs[0Ktravis_time:start:0b222163[0Ktravis_time:end:0b222163:start=1708776984566702615,finish=1708776984848428829,duration=281726214,event=disable_ssh_roaming[0Ktravis_time:start:2e1a0680[0Ktravis_time:end:2e1a0680:start=1708776984853075709,finish=1708776984855514416,duration=2438707,event=debug_tools[0Ktravis_time:start:30a56eed[0Ktravis_time:end:30a56eed:start=1708776984861330590,finish=1708776984865076460,duration=3745870,event=uninstall_oclint[0Ktravis_time:start:052ec954[0Ktravis_time:end:052ec954:start=1708776984870799784,finish=1708776984873794614,duration=2994830,event=rvm_use[0Ktravis_time:start:2db393ea[0Ktravis_time:end:2db393ea:start=1708776984878079000,finish=1708776984886163951,duration=8084951,event=rm_etc_boto_cfg[0Ktravis_time:start:001d5d17[0Ktravis_time:end:001d5d17:start=1708776984889850013,finish=1708776984892460715,duration=2610702,event=rm_oraclejdk8_symlink[0Ktravis_time:start:0f225fc1[0Ktravis_time:end:0f225fc1:start=1708776984895814934,finish=1708776984980771042,duration=84956108,event=enable_i386[0Ktravis_time:start:077941d4[0Ktravis_time:end:077941d4:start=1708776984984586159,finish=1708776984988146652,duration=3560493,event=update_rubygems[0Ktravis_time:start:0015b132[0Ktravis_time:end:0015b132:start=1708776984993446696,finish=1708776985860088132,duration=866641436,event=ensure_path_components[0Ktravis_time:start:051e475c[0Ktravis_time:end:051e475c:start=1708776985864310989,finish=1708776985866666131,duration=2355142,event=redefine_curl[0Ktravis_time:start:05f85b40[0Ktravis_time:end:05f85b40:start=1708776985871382018,finish=1708776985991865560,duration=120483542,event=nonblock_pipe[0Ktravis_time:start:0248cfd0[0Ktravis_time:end:0248cfd0:start=1708776985997559506,finish=1708776992029986056,duration=6032426550,event=apt_get_update[0Ktravis_time:start:059e6456[0Ktravis_time:end:059e6456:start=1708776992034392472,finish=1708776992036614262,duration=2221790,event=deprecate_xcode_64[0Ktravis_time:start:22626300[0Ktravis_time:end:22626300:start=1708776992040213880,finish=1708776995586895980,duration=3546682100,event=update_heroku[0Ktravis_time:start:0d0798a8[0Ktravis_time:end:0d0798a8:start=1708776995592309649,finish=1708776995594787700,duration=2478051,event=shell_session_update[0Ktravis_time:start:11cddb8b[0Ktravis_fold:start:docker_mtu_and_registry_mirrors[0Ktravis_fold:end:docker_mtu_and_registry_mirrors[0Ktravis_time:end:11cddb8b:start=1708776995599740035,finish=1708776998063645285,duration=2463905250,event=set_docker_mtu_and_registry_mirrors[0Ktravis_time:start:01289e02[0Ktravis_fold:start:resolvconf[0Ktravis_fold:end:resolvconf[0Ktravis_time:end:01289e02:start=1708776998067769670,finish=1708776998130945118,duration=63175448,event=resolvconf[0Ktravis_time:start:18192380[0Ktravis_time:end:18192380:start=1708776998141028153,finish=1708776998266294989,duration=125266836,event=maven_central_mirror[0Ktravis_time:start:1c17bc20[0Ktravis_time:end:1c17bc20:start=1708776998270743038,finish=1708776998359122962,duration=88379924,event=maven_https[0Ktravis_time:start:0467b980[0Ktravis_fold:start:services[0Ktravis_time:start:0f3ca673[0K$ sudo systemctl start docker
+travis_time:end:0f3ca673:start=1708776998366835938,finish=1708776998378509709,duration=11673771,event=prepare[0Ktravis_fold:end:services[0Ktravis_time:end:0f3ca673:start=1708776998366835938,finish=1708777001383459035,duration=3016623097,event=services[0Ktravis_time:start:06da3fb8[0Ktravis_time:end:06da3fb8:start=1708777001388180940,finish=1708777001390587800,duration=2406860,event=fix_ps4[0Ktravis_time:start:0a039522[0K
+travis_fold:start:git.checkout[0Ktravis_time:start:35d27ac8[0Ktravis_time:end:35d27ac8:start=1708777001398704140,finish=1708777001403947199,duration=5243059,event=checkout[0Ktravis_time:start:002bca1a[0K$ git clone --depth=50 --branch=main https://github.com/m7md2112/nd9990-monolith-to-microservices-project.git m7md2112/nd9990-monolith-to-microservices-project
+Cloning into 'm7md2112/nd9990-monolith-to-microservices-project'...
+travis_time:end:002bca1a:start=1708777001409227510,finish=1708777001995501898,duration=586274388,event=checkout[0K$ cd m7md2112/nd9990-monolith-to-microservices-project
+$ git checkout -qf 9733552bc727cde1034102cf5c48d88400b6fa71
+travis_fold:end:git.checkout[0K
+travis_time:end:002bca1a:start=1708777001409227510,finish=1708777002088866548,duration=679639038,event=checkout[0Ktravis_time:start:252870a0[0K
+[33;1mSetting environment variables from repository settings[0m
+$ export DOCKER_PASSWORD=[secure]
+$ export DOCKER_USERNAME=m7md2112
+
+travis_time:end:252870a0:start=1708777002093296123,finish=1708777002099994120,duration=6697997,event=env[0K$ bash -c 'echo $BASH_VERSION'
+4.3.48(1)-release
+
+travis_fold:start:before_script[0Ktravis_time:start:1d97843c[0K$ echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+WARNING! Your password will be stored unencrypted in /home/travis/.docker/config.json.
+Configure a credential helper to remove this warning. See
+https://docs.docker.com/engine/reference/commandline/login/#credentials-store
+
+Login Succeeded
+travis_time:end:1d97843c:start=1708777002106469088,finish=1708777002735551696,duration=629082608,event=before_script[0Ktravis_fold:end:before_script[0Ktravis_time:start:0a9bbfac[0K$ docker build -t udagram-api-user ./udagram-api-user
+Sending build context to Docker daemon  6.209MB
+Step 1/7 : FROM node:12
+12: Pulling from library/node
+f5196cdf2518: Pulling fs layer
+9bed1e86f01e: Pulling fs layer
+f44e4bdb3a6c: Pulling fs layer
+2f75d131f406: Pulling fs layer
+07dff4ad21eb: Pulling fs layer
+e0ac4f13b766: Pulling fs layer
+df2c3b2eb7cc: Pulling fs layer
+efe636eac583: Pulling fs layer
+fe17849545bb: Pulling fs layer
+e0ac4f13b766: Waiting
+df2c3b2eb7cc: Waiting
+efe636eac583: Waiting
+fe17849545bb: Waiting
+2f75d131f406: Waiting
+07dff4ad21eb: Waiting
+f44e4bdb3a6c: Verifying Checksum
+f44e4bdb3a6c: Download complete
+9bed1e86f01e: Verifying Checksum
+9bed1e86f01e: Download complete
+f5196cdf2518: Verifying Checksum
+f5196cdf2518: Download complete
+e0ac4f13b766: Verifying Checksum
+e0ac4f13b766: Download complete
+2f75d131f406: Verifying Checksum
+2f75d131f406: Download complete
+efe636eac583: Verifying Checksum
+efe636eac583: Download complete
+fe17849545bb: Verifying Checksum
+fe17849545bb: Download complete
+df2c3b2eb7cc: Verifying Checksum
+df2c3b2eb7cc: Download complete
+07dff4ad21eb: Verifying Checksum
+07dff4ad21eb: Download complete
+f5196cdf2518: Pull complete
+9bed1e86f01e: Pull complete
+f44e4bdb3a6c: Pull complete
+2f75d131f406: Pull complete
+07dff4ad21eb: Pull complete
+e0ac4f13b766: Pull complete
+df2c3b2eb7cc: Pull complete
+efe636eac583: Pull complete
+fe17849545bb: Pull complete
+Digest: sha256:01627afeb110b3054ba4a1405541ca095c8bfca1cb6f2be9479c767a2711879e
+Status: Downloaded newer image for node:12
+ ---> 6c8de432fc7f
+Step 2/7 : WORKDIR /usr/src/app
+ ---> Running in 2abcc6243a52
+Removing intermediate container 2abcc6243a52
+ ---> b4f587bf9e3c
+Step 3/7 : COPY package*.json ./
+ ---> 7e32ee06f014
+Step 4/7 : RUN npm i -f
+ ---> Running in b29a5125fb9a
+[91mnpm[0m[91m WARN using --force I sure hope you know what you are doing.
+[0m[91mnpm [0m[91mWARN read-shrinkwrap This version of npm is compatible with lockfileVersion@1, but package-lock.json was generated for lockfileVersion@3. I'll try to do my best with it!
+[0m[91mnpm[0m[91m [0m[91mWARN[0m[91m [0m[91mdeprecated[0m[91m sequelize@5.22.5: Please update to v6 or higher! A migration guide can be found here: https://sequelize.org/v6/manual/upgrade-to-v6.html
+[0m[91mnpm WARN deprecated debug@3.2.6: Debug versions >=3.2.0 <3.2.7 || >=4 <4.3.1 have a low-severity ReDos regression when used in a Node.js environment. It is recommended you upgrade to 3.2.7 or 4.3.1. (https://github.com/visionmedia/debug/issues/797)
+[0m[91mnpm WARN deprecated mkdirp@0.5.4: Legacy versions of mkdirp are no longer supported. Please update to mkdirp 1.x. (Note that the API surface has changed to use Promises in 1.x.)
+[0m[91mnpm WARN deprecated querystring@0.2.0: The querystring API is considered Legacy. new code should use the URLSearchParams API instead.
+[0m
+> bcrypt@5.1.1 install /usr/src/app/node_modules/bcrypt
+> node-pre-gyp install --fallback-to-build
+
+[bcrypt] Success: "/usr/src/app/node_modules/bcrypt/lib/binding/napi-v3/bcrypt_lib.node" is installed via remote
+[91mnpm WARN udagram-api@2.0.0 No description
+[0m[91mnpm WARN[0m[91m udagram-api@2.0.0 No repository field.
+[0m[91m
+[0madded 517 packages from 1116 contributors and audited 520 packages in 18.499s
+
+86 packages are looking for funding
+  run `npm fund` for details
+
+found 12 vulnerabilities (5 moderate, 3 high, 4 critical)
+  run `npm audit fix` to fix them, or `npm audit` for details
+Removing intermediate container b29a5125fb9a
+ ---> e450fedcb252
+Step 5/7 : COPY . .
+ ---> 661d48091da7
+Step 6/7 : EXPOSE 2020
+ ---> Running in 41665ebfcafe
+Removing intermediate container 41665ebfcafe
+ ---> 34c99861d4a5
+Step 7/7 : CMD [ "npm", "run", "dev" ]
+ ---> Running in e379ef12ef17
+Removing intermediate container e379ef12ef17
+ ---> c8e1ad6e0cc6
+Successfully built c8e1ad6e0cc6
+Successfully tagged udagram-api-user:latest
+travis_time:end:0a9bbfac:start=1708777002740786571,finish=1708777054761590237,duration=52020803666,event=script[0K[32;1mThe command "docker build -t udagram-api-user ./udagram-api-user" exited with 0.[0m
+travis_time:start:17440c7c[0K$ docker build -t udagram-api-feed ./udagram-api-feed
+Sending build context to Docker daemon  6.207MB
+Step 1/7 : FROM node:12
+ ---> 6c8de432fc7f
+Step 2/7 : WORKDIR /usr/src/app
+ ---> Using cache
+ ---> b4f587bf9e3c
+Step 3/7 : COPY package*.json ./
+ ---> Using cache
+ ---> 7e32ee06f014
+Step 4/7 : RUN npm i -f
+ ---> Using cache
+ ---> e450fedcb252
+Step 5/7 : COPY . .
+ ---> 92da24a261d2
+Step 6/7 : EXPOSE 3030
+ ---> Running in 829ec64531d1
+Removing intermediate container 829ec64531d1
+ ---> ccbd1174f343
+Step 7/7 : CMD [ "npm", "run", "dev" ]
+ ---> Running in e14984e76211
+Removing intermediate container e14984e76211
+ ---> 40531f92714b
+Successfully built 40531f92714b
+Successfully tagged udagram-api-feed:latest
+travis_time:end:17440c7c:start=1708777054765994244,finish=1708777055577091085,duration=811096841,event=script[0K[32;1mThe command "docker build -t udagram-api-feed ./udagram-api-feed" exited with 0.[0m
+travis_time:start:10fe756d[0K$ docker build -t udagram-frontend ./udagram-frontend
+Sending build context to Docker daemon  777.2kB
+Step 1/8 : FROM node:12 AS ionic
+ ---> 6c8de432fc7f
+Step 2/8 : WORKDIR /usr/src/app
+ ---> Using cache
+ ---> b4f587bf9e3c
+Step 3/8 : COPY package*.json ./
+ ---> 807b456bccfb
+Step 4/8 : RUN npm i -f
+ ---> Running in 2285e84586be
+[91mnpm[0m[91m WARN using --force I sure hope you know what you are doing.
+[0m[91mnpm[0m[91m WARN read-shrinkwrap This version of npm is compatible with lockfileVersion@1, but package-lock.json was generated for lockfileVersion@3. I'll try to do my best with it!
+[0m[91mnpm WARN deprecated protractor@5.4.4: We have news to share - Protractor is deprecated and will reach end-of-life by Summer 2023. To learn more and find out about other options please refer to this post on the Angular blog. Thank you for using and contributing to Protractor. https://goo.gle/state-of-e2e-in-angular
+[0m[91mnpm WARN deprecated core-js@2.6.12: core-js@<3.23.3 is no longer maintained and not recommended for usage due to the number of issues. Because of the V8 engine whims, feature detection in old core-js versions could cause a slowdown up to 100x even if nothing is polyfilled. Some versions have web compatibility issues. Please, upgrade your dependencies to the actual version of core-js.
+[0m[91mnpm WARN deprecated[0m[91m @angular/http@7.2.16: Package no longer supported. Use @angular/common instead, see https://angular.io/guide/deprecations#angularhttp
+[0m[91mnpm WARN[0m[91m deprecated chokidar@2.0.4: Chokidar 2 does not receive security updates since 2019. Upgrade to chokidar 3 with 15x fewer dependencies
+[0m[91mnpm WARN deprecated core-js@3.6.4: core-js@<3.23.3 is no longer maintained and not recommended for usage due to the number of issues. Because of the V8 engine whims, feature detection in old core-js versions could cause a slowdown up to 100x even if nothing is polyfilled. Some versions have web compatibility issues. Please, upgrade your dependencies to the actual version of core-js.
+[0m[91mnpm WARN deprecated ini@1.3.5: Please update to ini >=1.3.6 to avoid a prototype pollution issue
+[0m[91mnpm WARN deprecated uuid@3.4.0: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+[0m[91mnpm WARN deprecated chokidar@2.1.8: Chokidar 2 does not receive security updates since 2019. Upgrade to chokidar 3 with 15x fewer dependencies
+[0m[91mnpm WARN deprecated read-package-tree@5.3.1: The functionality that this package provided is now in @npmcli/arborist
+[0m[91mnpm WARN deprecated @schematics/update@0.803.29: This was an internal-only Angular package up through Angular v11 which is no longer used or maintained. Upgrade Angular to v12+ to remove this dependency.
+[0m[91mnpm WARN deprecated log4js@3.0.6: 3.x is no longer supported. Please upgrade to 6.x or higher.
+[0m[91mnpm WARN deprecated fsevents@1.2.13: The v1 package contains DANGEROUS / INSECURE binaries. Upgrade to safe fsevents v2
+[0m[91mnpm WARN deprecated figgy-pudding@3.5.2: This module is no longer supported.
+[0m[91mnpm WARN deprecated[0m[91m request@2.88.2: request has been deprecated, see https://github.com/request/request/issues/3142
+[0m[91mnpm WARN deprecated @babel/plugin-proposal-async-generator-functions@7.20.7: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-async-generator-functions instead.
+[0m[91mnpm WARN deprecated @babel/plugin-proposal-optional-catch-binding@7.18.6: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-optional-catch-binding instead.
+[0m[91mnpm WARN deprecated @babel/plugin-proposal-unicode-property-regex@7.18.6: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-unicode-property-regex instead.
+[0m[91mnpm WARN deprecated @babel/plugin-proposal-object-rest-spread@7.20.7: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-object-rest-spread instead.
+[0m[91mnpm WARN deprecated[0m[91m @babel/plugin-proposal-optional-chaining@7.21.0: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-optional-chaining instead.
+[0m[91mnpm WARN[0m[91m deprecated @babel/plugin-proposal-json-strings@7.18.6: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-json-strings instead.
+[0m[91mnpm WARN [0m[91mdeprecated @babel/plugin-proposal-nullish-coalescing-operator@7.18.6: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-nullish-coalescing-operator instead.
+[0m[91mnpm WARN deprecated @babel/plugin-proposal-dynamic-import@7.18.6: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-dynamic-import instead.
+[0m[91mnpm WARN deprecated superagent@5.3.1: Please upgrade to v7.0.2+ of superagent.  We have fixed numerous issues with streams, form-data, attach(), filesystem errors not bubbling up (ENOENT on attach()), and all tests are now passing.  See the releases tab for more information at <https://github.com/visionmedia/superagent/releases>.
+[0m[91mnpm WARN deprecated[0m[91m readdir-scoped-modules@1.1.0: This functionality has been moved to @npmcli/fs
+[0m[91mnpm WARN deprecated sourcemap-codec@1.4.8: Please use @jridgewell/sourcemap-codec instead
+[0m[91mnpm WARN deprecated[0m[91m circular-json@0.5.9: CircularJSON is in maintenance only, flatted is its successor.
+[0m[91mnpm WARN [0m[91mdeprecated streamroller@0.7.0: 0.x is no longer supported. Please upgrade to 3.x or higher.
+[0m[91mnpm WARN deprecated date-format@1.2.0: 1.x is no longer supported. Please upgrade to 4.x or higher.
+[0m[91mnpm WARN deprecated har-validator@5.1.5: this library is no longer supported
+[0m[91mnpm WARN deprecated @npmcli/move-file@1.1.2: This functionality has been moved to @npmcli/fs
+[0m[91mnpm WARN deprecated formidable@1.2.6: Please upgrade to latest, formidable@v2 or formidable@v3! Check these notes: https://bit.ly/2ZEqIau
+[0m[91mnpm WARN deprecated node-fetch-npm@2.0.4: This module is not used anymore, npm uses minipass-fetch for its fetch implementation now
+[0m[91mnpm WARN [0m[91mdeprecated debuglog@1.0.1: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
+[0m[91mnpm WARN deprecated source-map-resolve@0.5.3: See https://github.com/lydell/source-map-resolve#deprecated
+[0m[91mnpm[0m[91m WARN[0m[91m deprecated resolve-url@0.2.1: https://github.com/lydell/resolve-url#deprecated
+[0m[91mnpm WARN [0m[91mdeprecated source-map-url@0.4.1: See https://github.com/lydell/source-map-url#deprecated
+[0m[91mnpm WARN [0m[91mdeprecated urix@0.1.0: Please see https://github.com/lydell/urix#deprecated
+[0m[91mnpm WARN deprecated vm2@3.9.19: The library contains critical security issues and should not be used for production! The maintenance of the project has been discontinued. Consider migrating your code to isolated-vm.
+[0m
+> fsevents@1.2.13 install /usr/src/app/node_modules/@angular/compiler-cli/node_modules/fsevents
+> node install.js
+
+
+Skipping 'fsevents' build as platform linux is not supported
+
+> fsevents@1.2.13 install /usr/src/app/node_modules/chokidar/node_modules/fsevents
+> node install.js
+
+
+Skipping 'fsevents' build as platform linux is not supported
+
+> fsevents@1.2.13 install /usr/src/app/node_modules/watchpack-chokidar2/node_modules/fsevents
+> node install.js
+
+
+Skipping 'fsevents' build as platform linux is not supported
+
+> fsevents@1.2.13 install /usr/src/app/node_modules/webpack-dev-server/node_modules/fsevents
+> node install.js
+
+
+Skipping 'fsevents' build as platform linux is not supported
+
+> core-js@3.6.4 postinstall /usr/src/app/node_modules/@angular-devkit/build-angular/node_modules/core-js
+> node -e "try{require('./postinstall')}catch(e){}"
+
+[96mThank you for using core-js ([94m https://github.com/zloirock/core-js [96m) for polyfilling JavaScript standard library![0m
+
+[96mThe project needs your help! Please consider supporting of core-js on Open Collective or Patreon: [0m
+[96m>[94m https://opencollective.com/core-js [0m
+[96m>[94m https://www.patreon.com/zloirock [0m
+
+[96mAlso, the author of core-js ([94m https://github.com/zloirock [96m) is looking for a good job -)[0m
+
+
+> core-js@2.6.12 postinstall /usr/src/app/node_modules/core-js
+> node -e "try{require('./postinstall')}catch(e){}"
+
+[96mThank you for using core-js ([94m https://github.com/zloirock/core-js [96m) for polyfilling JavaScript standard library![0m
+
+[96mThe project needs your help! Please consider supporting of core-js on Open Collective or Patreon: [0m
+[96m>[94m https://opencollective.com/core-js [0m
+[96m>[94m https://www.patreon.com/zloirock [0m
+
+[96mAlso, the author of core-js ([94m https://github.com/zloirock [96m) is looking for a good job -)[0m
+
+
+> @angular/cli@8.3.29 postinstall /usr/src/app/node_modules/@angular/cli
+> node ./bin/postinstall/script.js
+
+[91mnpm WARN @angular/http@7.2.16 requires a peer of @angular/core@7.2.16 but none is installed. You must install peer dependencies yourself.
+[0m[91mnpm WARN @angular/http@7.2.16 requires a peer of @angular/platform-browser@7.2.16 but none is installed. You must install peer dependencies yourself.
+[0m[91mnpm WARN @typescript-eslint/eslint-plugin@2.34.0 requires a peer of eslint@^5.0.0 || ^6.0.0 but none is installed. You must install peer dependencies yourself.
+[0m[91mnpm [0m[91mWARN @typescript-eslint/parser@2.34.0 requires a peer of eslint@^5.0.0 || ^6.0.0 but none is installed. You must install peer dependencies yourself.
+[0m[91mnpm WARN[0m[91m codelyzer@4.5.0 requires a peer of @angular/compiler@>=2.3.1 <8.0.0 || >7.0.0-beta <8.0.0 but none is installed. You must install peer dependencies yourself.
+[0m[91mnpm WARN codelyzer@4.5.0 requires a peer of @angular/core@>=2.3.1 <8.0.0 || >7.0.0-beta <8.0.0 but none is installed. You must install peer dependencies yourself.
+[0m[91mnpm WARN update-browserslist-db@1.0.13 requires a peer of browserslist@>= 4.21.0 but none is installed. You must install peer dependencies yourself.
+[0m[91mnpm WARN ajv-keywords@3.5.2 requires a peer of ajv@^6.9.1 but none is installed. You must install peer dependencies yourself.
+[0m[91mnpm WARN @typescript-eslint/experimental-utils@2.34.0 requires a peer of eslint@* but none is installed. You must install peer dependencies yourself.
+[0m[91m
+[0madded 1642 packages from 1136 contributors and audited 1645 packages in 68.108s
+
+115 packages are looking for funding
+  run `npm fund` for details
+
+found 69 vulnerabilities (4 low, 33 moderate, 23 high, 9 critical)
+  run `npm audit fix` to fix them, or `npm audit` for details
+Removing intermediate container 2285e84586be
+ ---> 7fc0b63cf994
+Step 5/8 : COPY . .
+ ---> 456f66e23434
+Step 6/8 : RUN npm run build
+ ---> Running in df0f73417bf4
+
+> udagram-frontend@0.0.1 build /usr/src/app
+> ng build
+
+
+chunk {0} 0.js, 0.js.map () 15.4 kB  [rendered]
+chunk {1} 1.js, 1.js.map () 15.2 kB  [rendered]
+chunk {2} 2.js, 2.js.map () 16.3 kB  [rendered]
+chunk {3} 3.js, 3.js.map () 21.8 kB  [rendered]
+chunk {4} 4.js, 4.js.map () 18.9 kB  [rendered]
+chunk {5} 5.js, 5.js.map () 32.5 kB  [rendered]
+chunk {6} 6.js, 6.js.map () 32.5 kB  [rendered]
+chunk {7} 7.js, 7.js.map () 70.3 kB  [rendered]
+chunk {8} 8.js, 8.js.map () 69.1 kB  [rendered]
+chunk {9} 9.js, 9.js.map () 5.19 kB  [rendered]
+chunk {10} 10.js, 10.js.map () 5.24 kB  [rendered]
+chunk {11} 11.js, 11.js.map () 11.3 kB  [rendered]
+chunk {12} 12.js, 12.js.map () 11.9 kB  [rendered]
+chunk {13} 13.js, 13.js.map () 4.12 kB  [rendered]
+chunk {14} 14.js, 14.js.map () 4.11 kB  [rendered]
+chunk {15} 15.js, 15.js.map () 24.4 kB  [rendered]
+chunk {16} 16.js, 16.js.map () 24.6 kB  [rendered]
+chunk {17} 17.js, 17.js.map () 13.2 kB  [rendered]
+chunk {18} 18.js, 18.js.map () 12.8 kB  [rendered]
+chunk {19} 19.js, 19.js.map () 9.27 kB  [rendered]
+chunk {20} 20.js, 20.js.map () 9.39 kB  [rendered]
+chunk {21} 21.js, 21.js.map () 5.84 kB  [rendered]
+chunk {22} 22.js, 22.js.map () 5.84 kB  [rendered]
+chunk {23} 23.js, 23.js.map () 16.9 kB  [rendered]
+chunk {24} 24.js, 24.js.map () 73 kB  [rendered]
+chunk {25} 25.js, 25.js.map () 72.6 kB  [rendered]
+chunk {26} 26.js, 26.js.map () 21.2 kB  [rendered]
+chunk {27} 27.js, 27.js.map () 20.3 kB  [rendered]
+chunk {28} 28.js, 28.js.map () 4.1 kB  [rendered]
+chunk {29} 29.js, 29.js.map () 15.1 kB  [rendered]
+chunk {30} 30.js, 30.js.map () 15.1 kB  [rendered]
+chunk {31} 31.js, 31.js.map () 15.9 kB  [rendered]
+chunk {32} 32.js, 32.js.map () 15.7 kB  [rendered]
+chunk {33} 33.js, 33.js.map () 31.1 kB  [rendered]
+chunk {34} 34.js, 34.js.map () 30.9 kB  [rendered]
+chunk {35} 35.js, 35.js.map () 42.8 kB  [rendered]
+chunk {36} 36.js, 36.js.map () 46.4 kB  [rendered]
+chunk {37} 37.js, 37.js.map () 14.2 kB  [rendered]
+chunk {38} 38.js, 38.js.map () 13.9 kB  [rendered]
+chunk {39} 39.js, 39.js.map () 40.4 kB  [rendered]
+chunk {40} 40.js, 40.js.map () 40.5 kB  [rendered]
+chunk {41} 41.js, 41.js.map () 16.8 kB  [rendered]
+chunk {42} 42.js, 42.js.map () 16.8 kB  [rendered]
+chunk {43} 43.js, 43.js.map () 45.2 kB  [rendered]
+chunk {44} 44.js, 44.js.map () 22.2 kB  [rendered]
+chunk {45} 45.js, 45.js.map () 21.5 kB  [rendered]
+chunk {46} 46.js, 46.js.map () 12.9 kB  [rendered]
+chunk {47} 47.js, 47.js.map () 12.9 kB  [rendered]
+chunk {48} 48.js, 48.js.map () 15 kB  [rendered]
+chunk {49} 49.js, 49.js.map () 15.2 kB  [rendered]
+chunk {50} 50.js, 50.js.map () 23.6 kB  [rendered]
+chunk {51} 51.js, 51.js.map () 25 kB  [rendered]
+chunk {52} 52.js, 52.js.map () 21.2 kB  [rendered]
+chunk {53} 53.js, 53.js.map () 21.2 kB  [rendered]
+chunk {54} 54.js, 54.js.map () 14.8 kB  [rendered]
+chunk {55} 55.js, 55.js.map () 14.8 kB  [rendered]
+chunk {56} 56.js, 56.js.map () 7.88 kB  [rendered]
+chunk {57} 57.js, 57.js.map () 32.8 kB  [rendered]
+chunk {58} 58.js, 58.js.map () 27.9 kB  [rendered]
+chunk {59} 59.js, 59.js.map () 25.4 kB  [rendered]
+chunk {60} 60.js, 60.js.map () 17.2 kB  [rendered]
+chunk {61} 61.js, 61.js.map () 16.8 kB  [rendered]
+chunk {62} 62.js, 62.js.map () 27 kB  [rendered]
+chunk {63} 63.js, 63.js.map () 27 kB  [rendered]
+chunk {64} 64.js, 64.js.map () 47.2 kB  [rendered]
+chunk {65} 65.js, 65.js.map () 47.2 kB  [rendered]
+chunk {66} 66.js, 66.js.map () 10.9 kB  [rendered]
+chunk {67} 67.js, 67.js.map () 7.74 kB  [rendered]
+chunk {68} 68.js, 68.js.map () 7.74 kB  [rendered]
+chunk {69} 69.js, 69.js.map () 16 kB  [rendered]
+chunk {70} 70.js, 70.js.map () 16.2 kB  [rendered]
+chunk {71} 71.js, 71.js.map () 2.06 kB  [rendered]
+chunk {72} 72.js, 72.js.map () 13.9 kB  [rendered]
+chunk {73} 73.js, 73.js.map () 13.9 kB  [rendered]
+chunk {74} 74.js, 74.js.map () 20.8 kB  [rendered]
+chunk {75} 75.js, 75.js.map () 21.3 kB  [rendered]
+chunk {76} 76.js, 76.js.map () 12.9 kB  [rendered]
+chunk {77} 77.js, 77.js.map () 12.8 kB  [rendered]
+chunk {78} 78.js, 78.js.map () 23.3 kB  [rendered]
+chunk {common} common.js, common.js.map (common) 14.7 kB  [rendered]
+chunk {core-js-js} core-js-js.js, core-js-js.js.map (core-js-js) 78.7 kB  [rendered]
+chunk {css-shim-206ea950-3169f23e-js} css-shim-206ea950-3169f23e-js.js, css-shim-206ea950-3169f23e-js.js.map (css-shim-206ea950-3169f23e-js) 21.9 kB  [rendered]
+chunk {dom-96781eef-a2fb04dd-js} dom-96781eef-a2fb04dd-js.js, dom-96781eef-a2fb04dd-js.js.map (dom-96781eef-a2fb04dd-js) 27.7 kB  [rendered]
+chunk {dom-js} dom-js.js, dom-js.js.map (dom-js) 20.2 kB  [rendered]
+chunk {focus-visible-70713a0c-js} focus-visible-70713a0c-js.js, focus-visible-70713a0c-js.js.map (focus-visible-70713a0c-js) 2.19 kB  [rendered]
+chunk {hardware-back-button-5afe3cb0-js} hardware-back-button-5afe3cb0-js.js, hardware-back-button-5afe3cb0-js.js.map (hardware-back-button-5afe3cb0-js) 2.87 kB  [rendered]
+chunk {home-home-module} home-home-module.js, home-home-module.js.map (home-home-module) 35.5 kB  [rendered]
+chunk {index-69c37885-js} index-69c37885-js.js, index-69c37885-js.js.map (index-69c37885-js) 41.9 kB  [rendered]
+chunk {input-shims-a4fc53ac-js} input-shims-a4fc53ac-js.js, input-shims-a4fc53ac-js.js.map (input-shims-a4fc53ac-js) 13.5 kB  [rendered]
+chunk {ios-transition-504cdd09-js} ios-transition-504cdd09-js.js, ios-transition-504cdd09-js.js.map (ios-transition-504cdd09-js) 26.6 kB  [rendered]
+chunk {main} main.js, main.js.map (main) 82.3 kB [initial] [rendered]
+chunk {md-transition-fea2bbfb-js} md-transition-fea2bbfb-js.js, md-transition-fea2bbfb-js.js.map (md-transition-fea2bbfb-js) 3.91 kB  [rendered]
+chunk {polyfills} polyfills.js, polyfills.js.map (polyfills) 316 kB [initial] [rendered]
+chunk {polyfills-es5} polyfills-es5.js, polyfills-es5.js.map (polyfills-es5) 716 kB [initial] [rendered]
+chunk {runtime} runtime.js, runtime.js.map (runtime) 9.77 kB [entry] [rendered]
+chunk {shadow-css-4889ae62-23996f3f-js} shadow-css-4889ae62-23996f3f-js.js, shadow-css-4889ae62-23996f3f-js.js.map (shadow-css-4889ae62-23996f3f-js) 15.7 kB  [rendered]
+chunk {status-tap-32c72c43-js} status-tap-32c72c43-js.js, status-tap-32c72c43-js.js.map (status-tap-32c72c43-js) 1.83 kB  [rendered]
+chunk {styles} styles.js, styles.js.map (styles) 100 kB [initial] [rendered]
+chunk {swipe-back-35ad8e37-js} swipe-back-35ad8e37-js.js, swipe-back-35ad8e37-js.js.map (swipe-back-35ad8e37-js) 2.67 kB  [rendered]
+chunk {swiper-bundle-8bab85e6-js} swiper-bundle-8bab85e6-js.js, swiper-bundle-8bab85e6-js.js.map (swiper-bundle-8bab85e6-js) 213 kB  [rendered]
+chunk {tap-click-ca00ce7f-js} tap-click-ca00ce7f-js.js, tap-click-ca00ce7f-js.js.map (tap-click-ca00ce7f-js) 6.32 kB  [rendered]
+chunk {vendor} vendor.js, vendor.js.map (vendor) 4.66 MB [initial] [rendered]
+Date: 2024-02-24T12:19:22.404Z - Hash: 943dfc050a27357a3a49 - Time: 10508ms
+Removing intermediate container df0f73417bf4
+ ---> 7f053aca507f
+Step 7/8 : FROM nginx:alpine
+alpine: Pulling from library/nginx
+619be1103602: Pulling fs layer
+018b9065ed0d: Pulling fs layer
+c3ea3344e711: Pulling fs layer
+c7059f310278: Pulling fs layer
+a101c9a82b88: Pulling fs layer
+d6a456492aaa: Pulling fs layer
+e1c681003a03: Pulling fs layer
+a85ccd8c07bd: Pulling fs layer
+c7059f310278: Waiting
+a101c9a82b88: Waiting
+d6a456492aaa: Waiting
+e1c681003a03: Waiting
+a85ccd8c07bd: Waiting
+c3ea3344e711: Verifying Checksum
+c3ea3344e711: Download complete
+018b9065ed0d: Verifying Checksum
+018b9065ed0d: Download complete
+619be1103602: Download complete
+c7059f310278: Verifying Checksum
+c7059f310278: Download complete
+a101c9a82b88: Verifying Checksum
+a101c9a82b88: Download complete
+d6a456492aaa: Verifying Checksum
+d6a456492aaa: Download complete
+e1c681003a03: Verifying Checksum
+e1c681003a03: Download complete
+619be1103602: Pull complete
+a85ccd8c07bd: Verifying Checksum
+a85ccd8c07bd: Download complete
+018b9065ed0d: Pull complete
+c3ea3344e711: Pull complete
+c7059f310278: Pull complete
+a101c9a82b88: Pull complete
+d6a456492aaa: Pull complete
+e1c681003a03: Pull complete
+a85ccd8c07bd: Pull complete
+Digest: sha256:6a2f8b28e45c4adea04ec207a251fd4a2df03ddc930f782af51e315ebc76e9a9
+Status: Downloaded newer image for nginx:alpine
+ ---> 6913ed9ec8d0
+Step 8/8 : COPY --from=ionic  /usr/src/app/www /usr/share/nginx/html
+ ---> 6fb9312cce37
+Successfully built 6fb9312cce37
+Successfully tagged udagram-frontend:latest
+travis_time:end:10fe756d:start=1708777055582430595,finish=1708777166976706109,duration=111394275514,event=script[0K[32;1mThe command "docker build -t udagram-frontend ./udagram-frontend" exited with 0.[0m
+travis_time:start:0b624e3d[0K$ docker build -t udagram-reverseproxy ./udagram-reverseproxy
+Sending build context to Docker daemon  3.584kB
+Step 1/2 : FROM nginx:alpine
+ ---> 6913ed9ec8d0
+Step 2/2 : COPY nginx.conf /etc/nginx/nginx.conf
+ ---> df2c5aa940ff
+Successfully built df2c5aa940ff
+Successfully tagged udagram-reverseproxy:latest
+travis_time:end:0b624e3d:start=1708777166981602414,finish=1708777167319591711,duration=337989297,event=script[0K[32;1mThe command "docker build -t udagram-reverseproxy ./udagram-reverseproxy" exited with 0.[0m
+travis_time:start:1d447e60[0K$ docker tag udagram-api-user $DOCKER_USERNAME/udagram-api-user:v1
+travis_time:end:1d447e60:start=1708777167325096737,finish=1708777167369078121,duration=43981384,event=script[0K[32;1mThe command "docker tag udagram-api-user $DOCKER_USERNAME/udagram-api-user:v1" exited with 0.[0m
+travis_time:start:03a5fc9c[0K$ docker tag udagram-api-feed $DOCKER_USERNAME/udagram-api-feed:v1
+travis_time:end:03a5fc9c:start=1708777167376718151,finish=1708777167422805539,duration=46087388,event=script[0K[32;1mThe command "docker tag udagram-api-feed $DOCKER_USERNAME/udagram-api-feed:v1" exited with 0.[0m
+travis_time:start:0f093e5a[0K$ docker tag udagram-frontend $DOCKER_USERNAME/udagram-frontend:v1
+travis_time:end:0f093e5a:start=1708777167431088255,finish=1708777167476279241,duration=45190986,event=script[0K[32;1mThe command "docker tag udagram-frontend $DOCKER_USERNAME/udagram-frontend:v1" exited with 0.[0m
+travis_time:start:082e92dc[0K$ docker tag udagram-reverseproxy $DOCKER_USERNAME/udagram-reverseproxy:v1
+travis_time:end:082e92dc:start=1708777167483320332,finish=1708777167527302371,duration=43982039,event=script[0K[32;1mThe command "docker tag udagram-reverseproxy $DOCKER_USERNAME/udagram-reverseproxy:v1" exited with 0.[0m
+travis_time:start:1836dc2b[0K$ docker push $DOCKER_USERNAME/udagram-api-user:v1
+The push refers to repository [docker.io/m7md2112/udagram-api-user]
+7df9e253da5f: Preparing
+b6f1f419f195: Preparing
+53d5de4d424c: Preparing
+6bf94b78988b: Preparing
+586c0b414da7: Preparing
+0bfd290f2c17: Preparing
+6d75cd01c26c: Preparing
+95904c181913: Preparing
+df69bfa94785: Preparing
+f35deb8d96fc: Preparing
+f6c2459e2059: Preparing
+f8323fb3a55c: Preparing
+2f4dc9775f33: Preparing
+0bfd290f2c17: Waiting
+6d75cd01c26c: Waiting
+95904c181913: Waiting
+df69bfa94785: Waiting
+f35deb8d96fc: Waiting
+f6c2459e2059: Waiting
+f8323fb3a55c: Waiting
+2f4dc9775f33: Waiting
+586c0b414da7: Layer already exists
+0bfd290f2c17: Layer already exists
+6d75cd01c26c: Layer already exists
+95904c181913: Layer already exists
+df69bfa94785: Layer already exists
+f35deb8d96fc: Layer already exists
+f6c2459e2059: Layer already exists
+f8323fb3a55c: Layer already exists
+53d5de4d424c: Pushed
+6bf94b78988b: Pushed
+2f4dc9775f33: Layer already exists
+7df9e253da5f: Pushed
+b6f1f419f195: Pushed
+v1: digest: sha256:491dff1b06c8d69f4ab7caac351137930a7f5255b8dd444b6eb41140367f92d5 size: 3054
+travis_time:end:1836dc2b:start=1708777167531886644,finish=1708777183807055277,duration=16275168633,event=script[0K[32;1mThe command "docker push $DOCKER_USERNAME/udagram-api-user:v1" exited with 0.[0m
+travis_time:start:06c36e58[0K$ docker push $DOCKER_USERNAME/udagram-api-feed:v1
+The push refers to repository [docker.io/m7md2112/udagram-api-feed]
+6fe9214faa5d: Preparing
+b6f1f419f195: Preparing
+53d5de4d424c: Preparing
+6bf94b78988b: Preparing
+586c0b414da7: Preparing
+0bfd290f2c17: Preparing
+6d75cd01c26c: Preparing
+95904c181913: Preparing
+df69bfa94785: Preparing
+f35deb8d96fc: Preparing
+f6c2459e2059: Preparing
+f8323fb3a55c: Preparing
+2f4dc9775f33: Preparing
+f35deb8d96fc: Waiting
+0bfd290f2c17: Waiting
+6d75cd01c26c: Waiting
+95904c181913: Waiting
+f6c2459e2059: Waiting
+df69bfa94785: Waiting
+f8323fb3a55c: Waiting
+2f4dc9775f33: Waiting
+586c0b414da7: Layer already exists
+0bfd290f2c17: Layer already exists
+6bf94b78988b: Mounted from m7md2112/udagram-api-user
+53d5de4d424c: Mounted from m7md2112/udagram-api-user
+b6f1f419f195: Mounted from m7md2112/udagram-api-user
+6d75cd01c26c: Layer already exists
+95904c181913: Layer already exists
+df69bfa94785: Layer already exists
+f35deb8d96fc: Layer already exists
+f6c2459e2059: Layer already exists
+f8323fb3a55c: Layer already exists
+2f4dc9775f33: Layer already exists
+6fe9214faa5d: Pushed
+v1: digest: sha256:cbd2e3c9e95ea143423b598a2082ae44d270deb0f8158b753e055067b0b32c3f size: 3054
+travis_time:end:06c36e58:start=1708777183813256497,finish=1708777187810933166,duration=3997676669,event=script[0K[32;1mThe command "docker push $DOCKER_USERNAME/udagram-api-feed:v1" exited with 0.[0m
+travis_time:start:03149046[0K$ docker push $DOCKER_USERNAME/udagram-frontend:v1
+The push refers to repository [docker.io/m7md2112/udagram-frontend]
+9c5faccff42a: Preparing
+667a247707f0: Preparing
+d8527026595f: Preparing
+2593b08e5428: Preparing
+9909978d630d: Preparing
+c5140fc719dd: Preparing
+3137f8f0c641: Preparing
+718db50a47c0: Preparing
+aedc3bda2944: Preparing
+3137f8f0c641: Waiting
+c5140fc719dd: Waiting
+718db50a47c0: Waiting
+aedc3bda2944: Waiting
+2593b08e5428: Layer already exists
+667a247707f0: Layer already exists
+d8527026595f: Layer already exists
+9909978d630d: Layer already exists
+c5140fc719dd: Layer already exists
+718db50a47c0: Layer already exists
+3137f8f0c641: Layer already exists
+aedc3bda2944: Layer already exists
+9c5faccff42a: Pushed
+v1: digest: sha256:e20100d14db4fd154cc0a89488fefaede26ef0c6ef90a95473d61cb855b240fb size: 2200
+travis_time:end:03149046:start=1708777187817150980,finish=1708777191590083945,duration=3772932965,event=script[0K[32;1mThe command "docker push $DOCKER_USERNAME/udagram-frontend:v1" exited with 0.[0m
+travis_time:start:085a282a[0K$ docker push $DOCKER_USERNAME/udagram-reverseproxy:v1
+The push refers to repository [docker.io/m7md2112/udagram-reverseproxy]
+2da504070727: Preparing
+667a247707f0: Preparing
+d8527026595f: Preparing
+2593b08e5428: Preparing
+9909978d630d: Preparing
+c5140fc719dd: Preparing
+3137f8f0c641: Preparing
+718db50a47c0: Preparing
+aedc3bda2944: Preparing
+c5140fc719dd: Waiting
+3137f8f0c641: Waiting
+718db50a47c0: Waiting
+aedc3bda2944: Waiting
+667a247707f0: Mounted from m7md2112/udagram-frontend
+d8527026595f: Mounted from m7md2112/udagram-frontend
+9909978d630d: Mounted from m7md2112/udagram-frontend
+2593b08e5428: Mounted from m7md2112/udagram-frontend
+718db50a47c0: Mounted from m7md2112/udagram-frontend
+3137f8f0c641: Mounted from m7md2112/udagram-frontend
+c5140fc719dd: Mounted from m7md2112/udagram-frontend
+aedc3bda2944: Mounted from m7md2112/udagram-frontend
+2da504070727: Pushed
+v1: digest: sha256:1d1bc1970487cdf3cf8f429cfeaeae945128fe732708a1fff7b541ebbf06c188 size: 2196
+travis_time:end:085a282a:start=1708777191597368772,finish=1708777195373682332,duration=3776313560,event=script[0K[32;1mThe command "docker push $DOCKER_USERNAME/udagram-reverseproxy:v1" exited with 0.[0m
+
+
+Done. Your build exited with 0.

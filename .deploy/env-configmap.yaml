@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: env-configmap
+data:
+  POSTGRES_HOST: database-1.cbh1yvoeojrk.us-west-2.rds.amazonaws.com
+  POSTGRES_DB: postgres
+  AWS_REGION: us-west-2b
+  AWS_BUCKET: arn:aws:s3:::nd9990
+  JWT_SECRET: tesseract
+  AWS_PROFILE: default
+  URL: a23a6eb6000994f67a90659c93b82ca3-875213694.us-west-2.elb.amazonaws.com

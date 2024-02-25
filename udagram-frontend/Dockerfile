@@ -13,3 +13,7 @@ RUN npm run build
 FROM nginx:alpine
 #COPY www /usr/share/nginx/html
 COPY --from=ionic  /usr/src/app/www /usr/share/nginx/html
+# Expose ports for HTTP
+EXPOSE 80
+# Start NGINX
+CMD ["nginx", "-g", "daemon off;"]

@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: backend-user
+  labels:
+    app: backend-user
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: backend-user
+  template:
+    metadata:
+      labels:
+        app: backend-user
+    spec:
+      containers:
+        - name: backend-user
+          image: m7md2112/udagram-api-user:v1.1
+          ports:
+            - containerPort: 2020
+          envFrom:
+            - configMapRef:
+                name: env-configmap
+            - secretRef:
+                name: env-secret

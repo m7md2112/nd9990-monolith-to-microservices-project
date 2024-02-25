@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: backend-user
-          image: m7md2112/udagram-api-user:v1
+          image: m7md2112/udagram-api-user:v1.1
           ports:
             - containerPort: 2020
           envFrom:

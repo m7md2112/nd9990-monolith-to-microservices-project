@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: reverseproxy
-          image: m7md2112/reverseproxy:v1
+          image: m7md2112/reverseproxy:v1.1
           ports:
             - containerPort: 8080
           envFrom:

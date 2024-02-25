@@ -19,15 +19,15 @@ jobs:
           DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
         run: |
           docker build -t udagram-api-user ./udagram-api-user
-          docker tag udagram-api-user $DOCKER_USERNAME/udagram-api-user:v1
+          docker tag udagram-api-user $DOCKER_USERNAME/udagram-api-user:v1.1
           docker build -t udagram-api-feed ./udagram-api-feed
-          docker tag udagram-api-feed $DOCKER_USERNAME/udagram-api-feed:v1
+          docker tag udagram-api-feed $DOCKER_USERNAME/udagram-api-feed:v1.1
           docker build -t udagram-frontend ./udagram-frontend
-          docker tag udagram-frontend $DOCKER_USERNAME/udagram-frontend:v1
+          docker tag udagram-frontend $DOCKER_USERNAME/udagram-frontend:v1.1
           docker build -t reverseproxy ./udagram-reverseproxy
-          docker tag reverseproxy $DOCKER_USERNAME/reverseproxy:v1
+          docker tag reverseproxy $DOCKER_USERNAME/reverseproxy:v1.1
           docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
-          docker push $DOCKER_USERNAME/udagram-api-user:v1
-          docker push $DOCKER_USERNAME/udagram-api-feed:v1
-          docker push $DOCKER_USERNAME/udagram-frontend:v1
-          docker push $DOCKER_USERNAME/reverseproxy:v1
+          docker push $DOCKER_USERNAME/udagram-api-user:v1.1
+          docker push $DOCKER_USERNAME/udagram-api-feed:v1.1
+          docker push $DOCKER_USERNAME/udagram-frontend:v1.1
+          docker push $DOCKER_USERNAME/reverseproxy:v1.1

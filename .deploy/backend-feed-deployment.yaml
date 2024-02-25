@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: backend-feed
-          image: m7md2112/udagram-api-feed:v1
+          image: m7md2112/udagram-api-feed:v1.1
           ports:
             - containerPort: 3030
           envFrom:
